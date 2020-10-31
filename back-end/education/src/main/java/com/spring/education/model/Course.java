@@ -1,8 +1,6 @@
 package com.spring.education.model;
 
-
 import com.spring.education.model.enums.Content;
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -21,5 +19,6 @@ public class Course {
     @Column(name = "course_price")
     private String coursePrice;
 
+    @OneToMany(mappedBy = "course")
     private List<Master> masters;
 }

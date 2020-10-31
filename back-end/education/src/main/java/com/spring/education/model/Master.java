@@ -43,5 +43,7 @@ public class Master {
     @UpdateTimestamp
     private Date lastUpdated;
 
+    @ManyToOne
+    @JoinColumn(name = "course_id")
     private Course course;
 }
