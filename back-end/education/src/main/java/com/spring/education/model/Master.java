@@ -8,12 +8,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 @Entity(name = "teacher")
-public class Master {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
+public class Master extends BaseEntity{
 
     @Column(name = "first_name")
     private String firstname;

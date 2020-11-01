@@ -6,12 +6,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "course")
-public class Course {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    private Long id;
+public class Course extends BaseEntity{
 
     @Enumerated(EnumType.ORDINAL)
     private Content content;
