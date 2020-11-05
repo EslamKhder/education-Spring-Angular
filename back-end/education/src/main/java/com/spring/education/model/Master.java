@@ -1,5 +1,4 @@
 package com.spring.education.model;
-
 import com.spring.education.model.enums.Gender;
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
