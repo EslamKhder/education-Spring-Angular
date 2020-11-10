@@ -8,6 +8,16 @@ import { MyCoursesComponent } from './componats/my-courses/my-courses.component'
 import { ExamComponent } from './componats/exam/exam.component';
 import { HeaderComponent } from './componats/header/header.component';
 import { FooterComponent } from './componats/footer/footer.component';
+import {RouterModule, Routes} from '@angular/router';
+
+const routs: Routes = [
+  {path: 'profile', component: ProfileComponent},
+  {path: 'course', component: CoursesComponent},
+  {path: 'my-course', component: MyCoursesComponent},
+  {path: 'exam', component: ExamComponent},
+  {path: '', component: CoursesComponent},
+  {path: '**' , component: CoursesComponent}
+];
 
 @NgModule({
   declarations: [
@@ -20,7 +30,8 @@ import { FooterComponent } from './componats/footer/footer.component';
     FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routs)
   ],
   providers: [],
   bootstrap: [AppComponent]
