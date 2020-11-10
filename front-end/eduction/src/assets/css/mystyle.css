@@ -99,3 +99,11 @@
   left: 200px;
   top: -37px;
 }
+.link
+{
+  color: #c9b8b8 !important;
+}
+.link-active
+{
+  color: white !important;
+}
