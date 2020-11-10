@@ -12,8 +12,8 @@ import {RouterModule, Routes} from '@angular/router';
 
 const routs: Routes = [
   {path: 'profile', component: ProfileComponent},
-  {path: 'course', component: CoursesComponent},
-  {path: 'my-course', component: MyCoursesComponent},
+  {path: 'courses', component: CoursesComponent},
+  {path: 'my-courses', component: MyCoursesComponent},
   {path: 'exam', component: ExamComponent},
   {path: '', component: CoursesComponent},
   {path: '**' , component: CoursesComponent}
