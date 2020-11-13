@@ -10,12 +10,11 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@MappedSuperclass
 @Entity
 @Table(name = "course")
 public class Course extends BaseEntity{
 
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     private Content content;
 
     @Column(name = "course_price")

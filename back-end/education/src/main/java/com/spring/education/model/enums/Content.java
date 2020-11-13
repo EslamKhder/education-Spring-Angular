@@ -1,5 +1,5 @@
 package com.spring.education.model.enums;
 
 public enum Content {
-    MATH,SCIENCE
+    MATH,ARABIC,ENGLISH,CHEMISTRY,FRENCH,CHINESE,ITALIEN,SPANISH,PHYSICS,GEOLOGY,GERMAN
 }
